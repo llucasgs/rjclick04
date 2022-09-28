@@ -1,0 +1,23 @@
+{
+  "name": "rjclick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/scss/main.scss:assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llucasgs/rjclick04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llucasgs/rjclick04/issues"
+  },
+  "homepage": "https://github.com/llucasgs/rjclick04#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
