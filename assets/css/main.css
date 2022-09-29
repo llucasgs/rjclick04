@@ -1,3 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato";
+}
+body .overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+body .hide-mobile {
+  display: none;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+body ul {
+  padding: 0;
+}
+body ul li {
+  list-style: none;
+}
+body.open .overlay {
+  display: block;
+}
+body.open header .menu-links {
+  right: 0;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  background-color: #131C21;
+  color: #FFF;
+}
+body .custom-hr {
+  width: 180px;
+  margin: 0;
+  border-color: #8D9035;
+  background-color: #8D9035;
+  height: 3px;
+}
+body .show-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body .show-desktop {
+    display: block;
+  }
+  body .max-width {
+    max-width: 700px !important;
+  }
+}
+@media (min-width: 1440px) {
+  body .max-width {
+    max-width: 1440px !important;
+  }
+}
 @font-face {
   font-family: "Lato";
   src: url("/assets/fonts/Lato-Regular.ttf") format("truetype");
@@ -98,6 +166,65 @@ body header .menu-links ul li + li {
     min-width: 100px;
     margin-left: 50px;
   }
+}
+body section.hero {
+  background-image: url("/assets/images/cristoredentor.jpg");
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: cover;
+  height: 100vh;
+}
+body section.hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(#161618, rgba(22, 22, 24, 0.5647058824));
+}
+body section.hero .destak {
+  height: calc(100vh - 100px);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+body section.hero .destak .title {
+  margin-top: 100px;
+  text-align: center;
+}
+body section.hero .destak .title h1 {
+  margin: 0;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bold;
+}
+body section.hero .destak .title h2 {
+  font-size: 20px;
+  color: #FFF;
+  font-weight: lighter;
+}
+body section.hero .destak .links {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(19, 28, 33, 0.5019607843);
+  padding: 0 25px;
+  overflow: auto;
+  color: #FFF;
+}
+body section.hero .destak .links .link-item {
+  display: flex;
+  align-items: center;
+  min-width: 150px;
+  cursor: pointer;
+}
+body section.hero .destak .links .link-item.active {
+  border-bottom: 2px solid #BFBC37;
+}
+body section.hero .destak .links .link-item.active svg path {
+  fill: #BFBC37;
 }
 
 /*# sourceMappingURL=main.css.map */

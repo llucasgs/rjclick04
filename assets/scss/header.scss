@@ -8,16 +8,19 @@ body {
         display: flex;
         align-items: center;
         background-color: #161618;
+
         .mobile-content {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0 25px;
+
             .nav-desktop {
                 display: none;
             }
         }
+
         .menu-links {
             position: fixed;
             width: 300px;
@@ -25,18 +28,21 @@ body {
             right: -300px;
             height: 100%;
             background-color: #CACAD2;
-            > a {
+
+            >a {
                 margin: 15px;
                 width: 48px;
                 height: 48px;
                 float: right;
             }
+
             ul {
                 margin: 150px 0;
                 text-align: center;
                 padding: 0;
                 font-size: 18px;
-                li + li {
+
+                li+li {
                     margin-top: 40px;
                 }
             }
@@ -49,11 +55,13 @@ body {
         header {
             .search {
                 position: relative;
+
                 img {
                     position: absolute;
                     top: 10px;
                     left: 15px;
                 }
+
                 input {
                     width: 500px;
                     height: 40px;
@@ -63,6 +71,7 @@ body {
                     outline: 0;
                     border: none;
                     border-radius: 20px;
+
                     &::placeholder {
                         color: #FFF;
                     }
@@ -77,14 +86,17 @@ body {
         header {
             .mobile-content {
                 justify-content: center;
+
                 .nav-desktop {
                     display: block;
+
                     ul {
                         color: #FFF;
                         display: flex;
                         justify-content: space-between;
                         margin: 0;
                         padding: 0;
+
                         li {
                             min-width: 100px;
                             margin-left: 50px;
