@@ -219,12 +219,196 @@ body section.hero .destak .links .link-item {
   align-items: center;
   min-width: 150px;
   cursor: pointer;
+  height: 100%;
 }
 body section.hero .destak .links .link-item.active {
   border-bottom: 2px solid #BFBC37;
 }
 body section.hero .destak .links .link-item.active svg path {
   fill: #BFBC37;
+}
+body section.hero .destak .links .link-item h3,
+body section.hero .destak .links .link-item h4 {
+  margin: 0;
+}
+body section.hero .destak .links .link-item h3 {
+  font-size: 12px;
+}
+body section.hero .destak .links .link-item h4 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  body section.hero .destak .title h1 {
+    font-size: 85px;
+  }
+  body section.hero .destak .title h2 {
+    font-size: 24px;
+  }
+  body section.hero .destak .links {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1400px) {
+  body section.hero .destak .title {
+    margin-top: 300px;
+  }
+  body section.hero .destak .title h1 {
+    font-size: 135px;
+  }
+  body section.hero .destak .title h2 {
+    font-size: 40px;
+    height: 100px;
+  }
+  body section.hero .destak .links .link-item .location {
+    margin-left: 10px;
+  }
+  body section.hero .destak .links .link-item .location h3 {
+    font-size: 24px;
+  }
+  body section.hero .destak .links .link-item .location h4 {
+    font-size: 20px;
+  }
+}
+main .popular-places {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 300px;
+}
+main .popular-places .section-title {
+  text-align: center;
+  margin: 100px 0;
+}
+main .popular-places .section-title h2 {
+  font-size: 35px;
+}
+main .popular-places .section-title h4 {
+  font-weight: lighter;
+  font-size: 16px;
+}
+main .popular-places .places {
+  margin: 100px 0;
+}
+main .popular-places .places .individual-place {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .popular-places .places .individual-place .description {
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(16, 25, 30, 0.5647058824);
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .popular-places .places .individual-place .description .name {
+  display: flex;
+}
+main .popular-places .places .individual-place .description .name h3 {
+  margin-top: 10px;
+}
+main .popular-places .places .individual-place .description p {
+  margin: 0;
+  font-size: 14px;
+}
+main .popular-places .places .individual-place:nth-child(1) {
+  background-image: url("/assets/images/popular-places/pao_de_acucar.png");
+}
+main .popular-places .places .individual-place:nth-child(2) {
+  background-image: url("/assets/images/popular-places/maracana.png");
+}
+main .popular-places .places .individual-place:nth-child(3) {
+  background-image: url("/assets/images/popular-places/lapa.png");
+}
+main .popular-places .places .individual-place:nth-child(4) {
+  background-image: url("/assets/images/popular-places/jardim_botanico.png");
+}
+
+@media (min-width: 768px) {
+  main .popular-places {
+    width: 100%;
+  }
+  main .popular-places .section-title h2 {
+    font-size: 45px;
+  }
+  main .popular-places .section-title h3 {
+    font-size: 22px;
+  }
+  main .popular-places .places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .popular-places .places .individual-place {
+    width: 320px;
+  }
+}
+main .why-choose-us {
+  background-color: #10191E;
+  text-align: center;
+  margin-bottom: 100px;
+}
+main .why-choose-us > h2 {
+  font-size: 30px;
+  margin: 0;
+}
+main .why-choose-us .reasons {
+  max-width: 300px;
+  margin: 75px auto;
+}
+main .why-choose-us .reasons .reason-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  height: 260px;
+}
+main .why-choose-us .reasons .reason-item.active .icon {
+  background-color: #8D9035;
+}
+main .why-choose-us .reasons .reason-item.active h3 {
+  color: #8D9035;
+}
+main .why-choose-us .reasons .reason-item .icon {
+  width: 100px;
+  height: 100px;
+  background-color: #252A2D;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .why-choose-us .reasons .reason-item + .reason-item {
+  margin-top: 70px;
+}
+
+@media (min-width: 768px) {
+  main .why-choose-us h2 {
+    font-size: 45px;
+  }
+  main .why-choose-us .reasons {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  main .why-choose-us .reasons .reason-item.active {
+    border-bottom: 2px solid #BFBC37;
+  }
+}
+@media (min-width: 1200px) {
+  main .why-choose-us .reasons .reason-item {
+    max-width: 300px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

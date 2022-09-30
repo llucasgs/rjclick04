@@ -55,6 +55,7 @@ body {
                     align-items: center;
                     min-width: 150px;
                     cursor: pointer;
+                    height: 100%;
 
                     &.active {
                         border-bottom: 2px solid #BFBC37;
@@ -62,6 +63,79 @@ body {
                         svg {
                             path {
                                 fill: #BFBC37;
+                            }
+                        }
+                    }
+
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+
+                    h3 {
+                        font-size: 12px;
+                    }
+
+                    h4 {
+                        font-size: 10px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        section.hero {
+            .destak {
+                .title {
+                    h1 {
+                        font-size: 85px;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                    }
+                }
+
+                .links {
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        section.hero {
+            .destak {
+                .title {
+                    margin-top: 300px;
+
+                    h1 {
+                        font-size: 135px;
+                    }
+
+                    h2 {
+                        font-size: 40px;
+                        height: 100px;
+                    }
+                }
+
+                .links {
+                    .link-item {
+                        .location {
+                            margin-left: 10px;
+
+                            h3 {
+                                font-size: 24px;
+                            }
+
+                            h4 {
+                                font-size: 20px;
                             }
                         }
                     }

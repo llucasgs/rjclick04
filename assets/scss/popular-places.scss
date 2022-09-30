@@ -1,0 +1,104 @@
+main {
+    .popular-places {
+        margin: 0 auto;
+        margin-bottom: 100px;
+        max-width: 300px;
+
+        .section-title {
+            text-align: center;
+            margin: 100px 0;
+
+            h2 {
+                font-size: 35px;
+            }
+
+            h4 {
+                font-weight: lighter;
+                font-size: 16px;
+            }
+        }
+
+        .places {
+            margin: 100px 0;
+
+            .individual-place {
+                width: 100%;
+                height: 350px;
+                position: relative;
+                margin-top: 60px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                .description {
+                    height: 120px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: #10191E90;
+                    padding: 0 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .name {
+                        display: flex;
+
+                        h3 {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                }
+
+                &:nth-child(1) {
+                    background-image: url("/assets/images/popular-places/pao_de_acucar.png");
+                }
+
+                &:nth-child(2) {
+                    background-image: url("/assets/images/popular-places/maracana.png");
+                }
+
+                &:nth-child(3) {
+                    background-image: url("/assets/images/popular-places/lapa.png");
+                }
+
+                &:nth-child(4) {
+                    background-image: url("/assets/images/popular-places/jardim_botanico.png");
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .popular-places {
+            width: 100%;
+
+            .section-title {
+                h2 {
+                    font-size: 45px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+            }
+
+            .places {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .individual-place {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
