@@ -62,7 +62,7 @@ body {
         height: 3px;
     }
 
-    .hide-desktop {
+    .show-desktop {
         display: none;
     }
 }
@@ -75,6 +75,22 @@ body {
 
         .max-width {
             max-width: 700px !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        .hide-desktop {
+            display: block;
+        }
+
+        .hide-mobile {
+            display: block;
+        }
+
+        .max-width {
+            max-width: 1100px !important;
         }
     }
 }

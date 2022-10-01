@@ -48,3 +48,19 @@ function showPlace() {
 }
 
 let myInterval = setInterval(showPlace, 4000);
+
+function onClickPlace(link) {
+
+    clearInterval(myInterval);
+
+    currentPlace = link.dataset.place;
+
+    showPlace();
+
+    myInterval = setInterval(showPlace, 4000);
+
+}
+
+links.forEach(link => {
+    link.addEventListener("click", () => onClickPlace(link))
+})

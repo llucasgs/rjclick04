@@ -28,6 +28,7 @@ body {
             right: -300px;
             height: 100%;
             background-color: #CACAD2;
+            transition: right .2s ease-out;
 
             >a {
                 margin: 15px;
