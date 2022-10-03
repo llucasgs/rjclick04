@@ -1,0 +1,114 @@
+main {
+    .explore-nature {
+        background-color: #10191E;
+
+        .nature-title {
+            max-width: 300px;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 400;
+            }
+        }
+
+        .nature-image {
+            width: 100%;
+            height: 840px;
+            background-image: url("/assets/images/explore-nature/ipanema_mobile.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 60px;
+            position: relative;
+
+            &:before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                background-color: #00000080;
+            }
+
+            .image-texts {
+                height: 100%;
+                padding: 170px 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .nature-destak {
+                    max-width: 250px;
+                    min-height: 100px;
+                    background-color: #CCCCCC50;
+                    border-radius: 5px;
+                    z-index: 2;
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    &:nth-child(2) {
+                        align-self: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .explore-nature {
+            .nature-title {
+                max-width: 600px;
+
+                h2 {
+                    font-size: 45px;
+                }
+            }
+
+            .nature-image {
+                .image-texts {
+                    .nature-destak {
+                        padding: 20px;
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        .explore-nature {
+            .nature-image {
+                background-image: url("/assets/images/explore-nature/ipanema_walk.png");
+                background-size: cover 100%;
+
+                .image-texts {
+                    max-width: 900px;
+                }
+
+                .show-desktop {
+                    width: 37.04%;
+                    height: 38.17%;
+                    position: absolute;
+                    top: 32.44%;
+                    right: 129px;
+                    background-image: url("/assets/images/explore-nature/ipanema_walk_cut.png");
+                    background-size: cover 100%;
+                    background-repeat: no-repeat;
+                    border: 5px solid #BFBC37;
+                }
+            }
+        }
+    }
+}

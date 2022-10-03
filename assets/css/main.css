@@ -497,5 +497,136 @@ main .perfect-vacations .vacation-text p {
     margin: 0;
   }
 }
+main .explore-nature {
+  background-color: #10191E;
+}
+main .explore-nature .nature-title {
+  max-width: 300px;
+  margin: 0 auto;
+}
+main .explore-nature .nature-title h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+main .explore-nature .nature-image {
+  width: 100%;
+  height: 840px;
+  background-image: url("/assets/images/explore-nature/ipanema_mobile.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  position: relative;
+}
+main .explore-nature .nature-image:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+}
+main .explore-nature .nature-image .image-texts {
+  height: 100%;
+  padding: 170px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .explore-nature .nature-image .image-texts .nature-destak {
+  max-width: 250px;
+  min-height: 100px;
+  background-color: rgba(204, 204, 204, 0.3137254902);
+  border-radius: 5px;
+  z-index: 2;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+main .explore-nature .nature-image .image-texts .nature-destak p {
+  margin: 0;
+}
+main .explore-nature .nature-image .image-texts .nature-destak:nth-child(2) {
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  main .explore-nature .nature-title {
+    max-width: 600px;
+  }
+  main .explore-nature .nature-title h2 {
+    font-size: 45px;
+  }
+  main .explore-nature .nature-image .image-texts .nature-destak {
+    padding: 20px;
+  }
+  main .explore-nature .nature-image .image-texts .nature-destak p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  main .explore-nature .nature-image {
+    background-image: url("/assets/images/explore-nature/ipanema_walk.png");
+    background-size: cover 100%;
+  }
+  main .explore-nature .nature-image .image-texts {
+    max-width: 900px;
+  }
+  main .explore-nature .nature-image .show-desktop {
+    width: 37.04%;
+    height: 38.17%;
+    position: absolute;
+    top: 32.44%;
+    right: 129px;
+    background-image: url("/assets/images/explore-nature/ipanema_walk_cut.png");
+    background-size: cover 100%;
+    background-repeat: no-repeat;
+    border: 5px solid #BFBC37;
+  }
+}
+main .testimonials {
+  max-width: 300px;
+  margin: 60px auto;
+}
+main .testimonials .testimonial-item {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+main .testimonials .testimonial-item .testimonial-quote {
+  display: flex;
+  flex-direction: column;
+}
+main .testimonials .testimonial-item.right .testimonial-quote {
+  align-items: flex-end;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  main .testimonials h2 {
+    font-size: 45px;
+  }
+  main .testimonials .testimonial-item .testimonial-quote {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  main .testimonials .testimonial-item {
+    flex-direction: row;
+  }
+  main .testimonials .testimonial-item img {
+    width: 500px;
+    margin-left: 50px;
+  }
+  main .testimonials .testimonial-item.right {
+    flex-direction: row-reverse;
+  }
+  main .testimonials .testimonial-item.right img {
+    margin-right: 50px;
+    margin-left: unset;
+  }
+  main .testimonials .testimonial-item:nth-child(1) img {
+    width: 100px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
