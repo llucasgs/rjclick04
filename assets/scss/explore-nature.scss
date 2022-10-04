@@ -91,20 +91,21 @@ main {
         .explore-nature {
             .nature-image {
                 background-image: url("/assets/images/explore-nature/ipanema_walk.png");
-                background-size: cover 100%;
+                background-size: cover;
 
                 .image-texts {
                     max-width: 900px;
                 }
 
                 .show-desktop {
-                    width: 37.04%;
-                    height: 38.17%;
+                    width: 685px;
+                    height: 397px;
                     position: absolute;
+                    // top: 32.44%;
                     top: 32.44%;
                     right: 129px;
                     background-image: url("/assets/images/explore-nature/ipanema_walk_cut.png");
-                    background-size: cover 100%;
+                    background-size: 100%;
                     background-repeat: no-repeat;
                     border: 5px solid #BFBC37;
                 }
